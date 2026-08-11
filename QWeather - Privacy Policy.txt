@@ -1,0 +1,17 @@
+Q Weather privacy policy
+
+Effective date: 9 August 2026
+
+Rising Goose publishes Q Weather as a non-commercial weather app. Contact: TL.Rising.Goose@gmail.com.
+
+Q Weather has no user accounts, advertising, analytics, tracking, data sales, donations, or developer-operated backend. Saved locations, app settings, widget configuration, and cached forecasts are stored locally on your device.
+
+Current location is optional. If you choose it, Q Weather requests coarse and precise foreground location through Google Play services. Q Weather does not request background-location permission. Background refresh uses coordinates already saved on the device.
+
+To provide its features, Q Weather sends location searches and coordinates over HTTPS to Open-Meteo for geocoding and forecasts. If enabled and applicable to the saved country, coordinates are also sent to Bright Sky for German rain data or to NWS and NOAA/NCEP for U.S. rain and NEXRAD data. Android's system geocoder may send coordinates to the geocoding service configured on the device. After a failed weather request, Q Weather may contact Google's connectivity-check endpoint without location parameters. When you choose to read this privacy policy in the app, Q Weather downloads the current policy over HTTPS from its public GitHub repository.
+
+The Q Weather developer does not receive these requests. External services, including GitHub when it serves this policy, may log requests, IP addresses, search terms, or coordinates under their own policies. Open-Meteo states that troubleshooting logs, which may contain coordinates, are deleted after 90 days. Provider terms and retention practices can change.
+
+Data is encrypted in transit with HTTPS. Local data remains until you remove a location, clear Q Weather's app data, or uninstall the app. You can avoid device-location access by adding places manually and can disable the regional rain sources in Developer settings.
+
+This policy may be updated when Q Weather's behavior or providers change. The current version is maintained in the public GitHub repository and loaded from there whenever you choose to read it in the app. Privacy questions, bug reports, and other enquiries can be sent to TL.Rising.Goose@gmail.com.
