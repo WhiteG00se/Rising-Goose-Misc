@@ -1,17 +1,60 @@
 Q Weather privacy policy
 
-Effective date: 9 August 2026
+Effective date: 23 August 2026
 
-Rising Goose publishes Q Weather as a non-commercial weather app. Contact: TL.Rising.Goose@gmail.com.
+Rising Goose publishes Q Weather as a non-commercial weather app. Privacy questions and other enquiries can be sent to TL.Rising.Goose@gmail.com.
 
-Q Weather has no user accounts, advertising, analytics, tracking, data sales, donations, or developer-operated backend. Saved locations, app settings, widget configuration, and cached forecasts are stored locally on your device.
+Q Weather has no user accounts, advertising, analytics, tracking, data sales, donations, or developer-operated backend.
 
-Current location is optional. If you choose it, Q Weather requests coarse and precise foreground location through Google Play services. Q Weather does not request background-location permission. Background refresh uses coordinates already saved on the device.
+Data stored on your device
 
-To provide its features, Q Weather sends location searches and coordinates over HTTPS to Open-Meteo for geocoding and forecasts. If enabled and applicable to the saved country, coordinates are also sent to Bright Sky for German rain data or to NWS and NOAA/NCEP for U.S. rain and NEXRAD data. Android's system geocoder may send coordinates to the geocoding service configured on the device. After a failed weather request, Q Weather may contact Google's connectivity-check endpoint without location parameters. When you choose to read this privacy policy in the app, Q Weather downloads the current policy over HTTPS from its public GitHub repository.
+Saved locations and coordinates, app settings, selected widget applications, widget configuration, and cached weather forecasts are stored in Q Weather’s private application storage.
 
-The Q Weather developer does not receive these requests. External services, including GitHub when it serves this policy, may log requests, IP addresses, search terms, or coordinates under their own policies. Open-Meteo states that troubleshooting logs, which may contain coordinates, are deleted after 90 days. Provider terms and retention practices can change.
+When you open a widget application selector, Q Weather reads the list of launchable applications installed on your device so that you can choose which application a widget should open. This list is processed only on your device and is not transmitted by Q Weather. Only the package name of an application you select is saved as part of the app settings.
 
-Data is encrypted in transit with HTTPS. Local data remains until you remove a location, clear Q Weather's app data, or uninstall the app. You can avoid device-location access by adding places manually and can disable the regional rain sources in Developer settings.
+Location data
 
-This policy may be updated when Q Weather's behavior or providers change. The current version is maintained in the public GitHub repository and loaded from there whenever you choose to read it in the app. Privacy questions, bug reports, and other enquiries can be sent to TL.Rising.Goose@gmail.com.
+Use of your current location is optional. If you choose it, Q Weather requests approximate and precise foreground location through Google Play services. Q Weather does not request background-location permission.
+
+When you save your current location, its coordinates are stored on your device. Background weather refreshes use coordinates already stored by the app and do not access your device’s current location in the background.
+
+You can use Q Weather without granting location permission by adding places manually.
+
+External services
+
+To provide weather information, Q Weather sends location-search terms and coordinates over HTTPS to Open-Meteo for geocoding and weather forecasts.
+
+When regional rain sources are enabled and applicable to a saved location, coordinates are also sent:
+
+- To Bright Sky for German rain forecasts and radar data.
+- To the United States National Weather Service and NOAA/NCEP for United States rain forecasts and NEXRAD radar data.
+
+Android’s system geocoder may send coordinates to the geocoding service configured on your device.
+
+After a failed weather request, Q Weather may contact Google’s connectivity-check service without including location parameters.
+
+When you choose to read this privacy policy inside the app, Q Weather downloads the current policy over HTTPS from its public GitHub repository.
+
+The Q Weather developer does not receive these requests. External services may receive and log information such as IP addresses, coordinates, search terms, request times, or technical request details under their own privacy policies and retention practices. Open-Meteo states that troubleshooting logs, which may contain coordinates, are deleted after 90 days. Third-party terms and retention practices may change independently of Q Weather.
+
+System backup and device transfer
+
+Depending on your Android device, Google account, manufacturer, and backup settings, Android may include Q Weather’s locally stored data in a system cloud backup or device-to-device transfer. This may include saved locations and coordinates, settings, selected widget applications, widget configuration, and cached forecasts.
+
+These backup and transfer services are operated by Android, Google, or your device manufacturer—not by the Q Weather developer. The developer does not receive or control these backups. Their security, retention, deletion, and restoration are governed by your device settings and the applicable service provider’s policies.
+
+You can manage or disable system backup through your Android or Google account settings.
+
+Security, retention, and deletion
+
+Network data is encrypted in transit using HTTPS.
+
+Data in Q Weather’s private application storage remains until it is replaced by newer data, removed through the app, cleared through Android’s app settings, or deleted when the app is uninstalled. Removing a saved location removes it from Q Weather’s active settings and cache.
+
+Clearing Q Weather’s app data or uninstalling the app may not immediately delete copies retained by an Android system-backup provider. Those copies must be managed through the corresponding device or account backup settings and remain subject to the provider’s retention policy.
+
+Policy updates
+
+This policy may be updated when Q Weather’s behavior, data handling, or external service providers change. The current version is maintained in the public GitHub repository and loaded whenever you choose to read it inside the app.
+
+Contact: TL.Rising.Goose@gmail.com
