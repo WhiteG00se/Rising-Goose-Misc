@@ -4,7 +4,74 @@ param()
 $ErrorActionPreference = "Stop"
 $keystoreDirectory = $PSScriptRoot
 $minimumPasswordLength = 6
-$minimumValidityYears = 25
+$defaultValidityYears = 99
+$maximumValidityYears = [math]::Floor([int]::MaxValue / 365)
+
+$script:editableConsoleAvailable = $env:OS -eq "Windows_NT"
+if ($script:editableConsoleAvailable -and -not ("KeystoreConsoleInput" -as [type])) {
+    Add-Type -TypeDefinition @"
+using System;
+using System.ComponentModel;
+using System.Runtime.InteropServices;
+using System.Text;
+
+public static class KeystoreConsoleInput
+{
+    [StructLayout(LayoutKind.Sequential)]
+    private struct ConsoleReadControl
+    {
+        public uint Length;
+        public uint InitialCharacterCount;
+        public uint ControlWakeupMask;
+        public uint ControlKeyState;
+    }
+
+    [DllImport("kernel32.dll", SetLastError = true)]
+    private static extern IntPtr GetStdHandle(int standardHandle);
+
+    [DllImport("kernel32.dll", CharSet = CharSet.Unicode, SetLastError = true)]
+    private static extern bool ReadConsoleW(
+        IntPtr consoleInput,
+        StringBuilder buffer,
+        uint charactersToRead,
+        out uint charactersRead,
+        ref ConsoleReadControl inputControl);
+
+    public static string ReadLineWithInitialValue(string initialValue)
+    {
+        const int StandardInputHandle = -10;
+        const int BufferCapacity = 32768;
+
+        if (initialValue.Length >= BufferCapacity)
+        {
+            throw new ArgumentException("The initial value is too long.", "initialValue");
+        }
+
+        var inputHandle = GetStdHandle(StandardInputHandle);
+        var buffer = new StringBuilder(initialValue, BufferCapacity);
+        var inputControl = new ConsoleReadControl
+        {
+            Length = (uint)Marshal.SizeOf(typeof(ConsoleReadControl)),
+            InitialCharacterCount = (uint)initialValue.Length
+        };
+
+        uint charactersRead;
+
+        if (!ReadConsoleW(
+            inputHandle,
+            buffer,
+            BufferCapacity - 1,
+            out charactersRead,
+            ref inputControl))
+        {
+            throw new Win32Exception(Marshal.GetLastWin32Error());
+        }
+
+        return buffer.ToString(0, (int)charactersRead).TrimEnd('\r', '\n');
+    }
+}
+"@
+}
 
 trap {
     Write-Host ""
@@ -23,6 +90,39 @@ function Read-RequiredText {
     while ($true) {
         $value = (Read-Host $Prompt).Trim()
         if ($value) {
+            return $value
+        }
+        Write-Host "A value is required." -ForegroundColor Yellow
+    }
+}
+
+function Read-EditableText {
+    param(
+        [string]$Prompt,
+        [string]$InitialValue,
+        [switch]$Required
+    )
+
+    while ($true) {
+        if ($script:editableConsoleAvailable) {
+            Write-Host ($Prompt + ": " + $InitialValue) -NoNewline
+            try {
+                $value = [KeystoreConsoleInput]::ReadLineWithInitialValue($InitialValue).Trim()
+            }
+            catch {
+                $script:editableConsoleAvailable = $false
+                Write-Host ""
+                continue
+            }
+        }
+        else {
+            $value = (Read-Host ($Prompt + " [$InitialValue]")).Trim()
+            if (-not $value) {
+                $value = $InitialValue
+            }
+        }
+
+        if ($value -or -not $Required) {
             return $value
         }
         Write-Host "A value is required." -ForegroundColor Yellow
@@ -112,7 +212,9 @@ if (Test-Path -LiteralPath $keystorePath) {
     Stop-Setup "The file already exists: $keystorePath"
 }
 
-$alias = Read-RequiredText "Key alias"
+$defaultName = [IO.Path]::GetFileNameWithoutExtension($fileName)
+$alias = Read-EditableText "Key alias" $defaultName -Required
+$commonName = Read-EditableText "Certificate name" $defaultName -Required
 $storePassword = Read-ConfirmedPassword `
     "Keystore password" `
     "Confirm keystore password"
@@ -124,9 +226,8 @@ if ($null -eq $keyPassword) {
     $keyPassword = $storePassword
 }
 
-$commonName = Read-RequiredText "Certificate name"
 $organizationalUnit = (Read-Host "Organizational unit (optional)").Trim()
-$organization = (Read-Host "Organization (optional)").Trim()
+$organization = Read-EditableText "Organization (optional)" "Rising Goose"
 $locality = (Read-Host "City/locality (optional)").Trim()
 $state = (Read-Host "State/province (optional)").Trim()
 $country = (Read-Host "Two-letter country code (optional)").Trim().ToUpperInvariant()
@@ -151,12 +252,12 @@ $distinguishedName = ($dnValues.GetEnumerator() |
     Where-Object { $_.Value } |
     ForEach-Object { "$($_.Key)=$($_.Value)" }) -join ","
 
-$validityInput = (Read-Host "Validity in years [$minimumValidityYears]").Trim()
-$validityYears = $minimumValidityYears
-if ($validityInput -and
-    (-not [int]::TryParse($validityInput, [ref]$validityYears) -or
-        $validityYears -lt $minimumValidityYears)) {
-    Stop-Setup "Validity must be an integer of at least $minimumValidityYears years."
+$validityInput = Read-EditableText "Validity in years" $defaultValidityYears -Required
+$validityYears = 0
+if (-not [int]::TryParse($validityInput, [ref]$validityYears) -or
+    $validityYears -lt 1 -or
+    $validityYears -gt $maximumValidityYears) {
+    Stop-Setup "Validity must be a positive integer no greater than $maximumValidityYears years."
 }
 $validityDays = $validityYears * 365
 
