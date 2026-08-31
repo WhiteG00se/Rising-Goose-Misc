@@ -1,5 +1,3 @@
-# Sobre o aplicativo, as fontes de dados e a política de privacidade
-
 - Data de vigência: 31 August 2026
 - Para relatar um bug ou fazer uma pergunta sobre privacidade, entre em contato com TL.Rising.Goose@gmail.com.
 - Q Weather é um aplicativo de clima gratuito e não comercial publicado pela Rising Goose.

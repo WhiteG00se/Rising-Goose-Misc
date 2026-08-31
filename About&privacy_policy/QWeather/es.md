@@ -1,5 +1,3 @@
-# Acerca de la aplicación, las fuentes de datos y la política de privacidad
-
 - Fecha de entrada en vigor: 31 August 2026
 - Para informar de un error o hacer una pregunta sobre privacidad, contacta con TL.Rising.Goose@gmail.com.
 - Q Weather es una aplicación meteorológica gratuita y no comercial publicada por Rising Goose.

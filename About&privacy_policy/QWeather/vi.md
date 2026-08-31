@@ -1,5 +1,3 @@
-# Giới thiệu về ứng dụng, nguồn dữ liệu và chính sách quyền riêng tư
-
 - Ngày có hiệu lực: 31 August 2026
 - Để báo lỗi hoặc đặt câu hỏi về quyền riêng tư, hãy liên hệ TL.Rising.Goose@gmail.com.
 - Q Weather là ứng dụng thời tiết miễn phí, phi thương mại do Rising Goose phát hành.

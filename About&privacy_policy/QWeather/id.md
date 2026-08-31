@@ -1,5 +1,3 @@
-# Tentang aplikasi, sumber data, dan kebijakan privasi
-
 - Tanggal berlaku: 31 August 2026
 - Untuk melaporkan bug atau mengajukan pertanyaan privasi, hubungi TL.Rising.Goose@gmail.com.
 - Q Weather adalah aplikasi cuaca gratis dan nonkomersial yang diterbitkan oleh Rising Goose.

@@ -1,5 +1,3 @@
-# About, data sources, privacy policy
-
 - Effective date: 31 August 2026
 - To report a bug or ask a privacy question, contact TL.Rising.Goose@gmail.com.
 - Q Weather is a free, non-commercial weather app published by Rising Goose.

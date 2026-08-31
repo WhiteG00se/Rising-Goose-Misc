@@ -1,5 +1,3 @@
-# O aplikaciji, izvorima podataka i pravilima privatnosti
-
 - Datum stupanja na snagu: 31 August 2026
 - Za prijavu pogreške ili pitanje o privatnosti obratite se na TL.Rising.Goose@gmail.com.
 - Q Weather je besplatna, nekomercijalna vremenska aplikacija koju objavljuje Rising Goose.

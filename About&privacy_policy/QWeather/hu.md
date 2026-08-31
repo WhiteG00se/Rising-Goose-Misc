@@ -1,5 +1,3 @@
-# Az alkalmazásról, az adatforrásokról és az adatvédelmi irányelvekről
-
 - Hatálybalépés dátuma: 31 August 2026
 - Hiba bejelentéséhez vagy adatvédelmi kérdés feltevéséhez lépjen kapcsolatba a TL.Rising.Goose@gmail.com címmel.
 - A Q Weather a Rising Goose által közzétett ingyenes, nem kereskedelmi időjárás-alkalmazás.

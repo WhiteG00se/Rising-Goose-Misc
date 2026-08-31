@@ -1,5 +1,3 @@
-# O aplikácii, zdrojoch údajov a zásadách ochrany súkromia
-
 - Dátum účinnosti: 31 August 2026
 - Ak chcete nahlásiť chybu alebo položiť otázku týkajúcu sa súkromia, kontaktujte TL.Rising.Goose@gmail.com.
 - Q Weather je bezplatná nekomerčná aplikácia počasia vydaná spoločnosťou Rising Goose.

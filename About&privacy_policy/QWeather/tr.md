@@ -1,5 +1,3 @@
-# Uygulama, veri kaynakları ve gizlilik politikası hakkında
-
 - Yürürlük tarihi: 31 August 2026
 - Bir hatayı bildirmek veya gizlilik hakkında soru sormak için TL.Rising.Goose@gmail.com adresine ulaşın.
 - Q Weather, Rising Goose tarafından yayımlanan ücretsiz ve ticari olmayan bir hava durumu uygulamasıdır.

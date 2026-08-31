@@ -1,5 +1,3 @@
-# Mengenai apl, sumber data dan dasar privasi
-
 - Tarikh berkuat kuasa: 31 August 2026
 - Untuk melaporkan pepijat atau bertanya soalan privasi, hubungi TL.Rising.Goose@gmail.com.
 - Q Weather ialah apl cuaca percuma dan bukan komersial yang diterbitkan oleh Rising Goose.

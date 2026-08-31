@@ -1,5 +1,3 @@
-# 关于应用、数据来源和隐私政策
-
 - 生效日期：31 August 2026
 - 如需报告错误或提出隐私问题，请联系 TL.Rising.Goose@gmail.com。
 - Q Weather 是由 Rising Goose 发布的免费非商业天气应用。

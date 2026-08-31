@@ -1,5 +1,3 @@
-# Tietoja sovelluksesta, tietolähteistä ja tietosuojakäytännöstä
-
 - Voimaantulopäivä: 31 August 2026
 - Ilmoita virheestä tai kysy tietosuojaa koskeva kysymys ottamalla yhteyttä osoitteeseen TL.Rising.Goose@gmail.com.
 - Q Weather on Rising Goosen julkaisema ilmainen, ei-kaupallinen sääsovellus.

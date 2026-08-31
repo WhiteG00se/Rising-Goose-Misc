@@ -1,5 +1,3 @@
-# Despre aplicație, sursele de date și politica de confidențialitate
-
 - Data intrării în vigoare: 31 August 2026
 - Pentru a raporta o eroare sau a adresa o întrebare despre confidențialitate, contactează TL.Rising.Goose@gmail.com.
 - Q Weather este o aplicație meteo gratuită, necomercială, publicată de Rising Goose.

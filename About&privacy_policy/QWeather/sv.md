@@ -1,5 +1,3 @@
-# Om appen, datakällor och integritetspolicy
-
 - Gäller från och med: 31 August 2026
 - Om du vill rapportera ett fel eller ställa en integritetsfråga kontaktar du TL.Rising.Goose@gmail.com.
 - Q Weather är en gratis, icke-kommersiell väderapp som publiceras av Rising Goose.

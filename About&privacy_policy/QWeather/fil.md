@@ -1,5 +1,3 @@
-# Tungkol sa app, mga pinagmumulan ng data, at patakaran sa privacy
-
 - Petsa ng bisa: 31 August 2026
 - Para mag-ulat ng bug o magtanong tungkol sa privacy, makipag-ugnayan sa TL.Rising.Goose@gmail.com.
 - Ang Q Weather ay isang libre at hindi pangkomersyal na weather app na inilathala ng Rising Goose.

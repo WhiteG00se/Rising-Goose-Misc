@@ -1,5 +1,3 @@
-# Over de app, gegevensbronnen en het privacybeleid
-
 - Ingangsdatum: 31 August 2026
 - Meld een bug of stel een privacyvraag via TL.Rising.Goose@gmail.com.
 - Q Weather is een gratis, niet-commerciële weerapp van Rising Goose.

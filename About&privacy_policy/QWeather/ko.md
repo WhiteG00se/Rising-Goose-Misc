@@ -1,5 +1,3 @@
-# 앱, 데이터 출처 및 개인정보처리방침
-
 - 시행일: 31 August 2026
 - 버그를 신고하거나 개인정보 보호에 관한 질문을 하려면 TL.Rising.Goose@gmail.com으로 문의하세요.
 - Q Weather는 Rising Goose가 게시한 무료 비상업용 날씨 앱입니다.
