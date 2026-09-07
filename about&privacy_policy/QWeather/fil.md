@@ -1,4 +1,4 @@
-- Petsa ng bisa: 31 August 2026
+- Petsa ng bisa: 7 September 2026
 - Para mag-ulat ng bug o magtanong tungkol sa privacy, makipag-ugnayan sa TL.Rising.Goose@gmail.com.
 - Ang Q Weather ay isang libre at hindi pangkomersyal na weather app na inilathala ng Rising Goose.
 - Wala itong mga account, advertising, analytics, tracking, pagbebenta ng data, donasyon, bayad na feature, o in-app purchase.
@@ -27,6 +27,8 @@
 
 - Opsyonal ang paggamit ng kasalukuyang lokasyon. Kapag naka-enable, humihingi ang Q Weather ng lokasyon sa pamamagitan ng Google Play services.
 - Ipapadala ang kasalukuyang lokasyon sa mga API provider para kumuha ng weather data.
+- Kapag pinagana ito ng user, maaaring i-access ng mga widget para sa kasalukuyang lokasyon at ng tuloy-tuloy na notification ng panahon ang lokasyon ng device sa background habang nakasara ang Q Weather, upang ma-update ang ipinapakitang forecast.
+- Ginagamit ang lokasyon sa background para lamang sa mga feature ng panahon na ito na pinagana ng user; hindi ito ginagamit para sa advertising, analytics, o tracking.
 - Maaari ka ring magdagdag ng mga lokasyon nang manu-mano nang hindi nagbibigay ng pahintulot sa lokasyon.
 
 ## Mga external na serbisyo

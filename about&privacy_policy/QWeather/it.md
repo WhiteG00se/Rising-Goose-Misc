@@ -1,4 +1,4 @@
-- Data di entrata in vigore: 31 August 2026
+- Data di entrata in vigore: 7 September 2026
 - Per segnalare un bug o porre una domanda sulla privacy, contatta TL.Rising.Goose@gmail.com.
 - Q Weather è un’app meteo gratuita e non commerciale pubblicata da Rising Goose.
 - Non include account, pubblicità, analisi, tracciamento, vendita di dati, donazioni, funzioni a pagamento o acquisti in-app.
@@ -27,6 +27,8 @@
 
 - L’uso della posizione attuale è facoltativo. Se abilitato, Q Weather richiede la posizione tramite Google Play services.
 - La posizione attuale viene inviata ai provider API per recuperare i dati meteorologici.
+- Quando l’utente lo abilita, i widget della posizione attuale e la notifica meteo persistente possono accedere alla posizione del dispositivo in background mentre Q Weather è chiuso, per aggiornare le previsioni visualizzate.
+- L’uso della posizione in background è limitato a queste funzioni meteo abilitate dall’utente; non viene utilizzato per pubblicità, analisi o tracciamento.
 - Puoi invece aggiungere manualmente le località senza concedere l’autorizzazione alla posizione.
 
 ## Servizi esterni

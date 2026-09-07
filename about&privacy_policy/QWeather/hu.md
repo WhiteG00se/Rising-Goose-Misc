@@ -1,4 +1,4 @@
-- Hatálybalépés dátuma: 31 August 2026
+- Hatálybalépés dátuma: 7 September 2026
 - Hiba bejelentéséhez vagy adatvédelmi kérdés feltevéséhez lépjen kapcsolatba a TL.Rising.Goose@gmail.com címmel.
 - A Q Weather a Rising Goose által közzétett ingyenes, nem kereskedelmi időjárás-alkalmazás.
 - Nem tartalmaz fiókokat, hirdetéseket, elemzéseket, nyomkövetést, adatértékesítést, adományokat, fizetős funkciókat vagy alkalmazáson belüli vásárlásokat.
@@ -27,6 +27,8 @@
 
 - Az aktuális hely használata nem kötelező. Ha engedélyezve van, a Q Weather a Google Play services szolgáltatáson keresztül kéri le a helyet.
 - Az aktuális helyet az API-szolgáltatóknak küldjük el az időjárási adatok lekéréséhez.
+- Ha a felhasználó engedélyezi, az aktuális helyzetet használó widgetek és a folyamatos időjárási értesítés a Q Weather bezárása után is hozzáférhetnek az eszköz helyadataihoz a háttérben, hogy frissítsék a megjelenített előrejelzést.
+- A háttérben használt helyadatokat csak ezekhez, a felhasználó által engedélyezett időjárási funkciókhoz használjuk; reklámozásra, elemzésre vagy nyomon követésre nem.
 - Helyeket manuálisan is hozzáadhat anélkül, hogy helyhozzáférést adna.
 
 ## Külső szolgáltatások

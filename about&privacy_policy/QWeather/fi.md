@@ -1,4 +1,4 @@
-- Voimaantulopäivä: 31 August 2026
+- Voimaantulopäivä: 7 September 2026
 - Ilmoita virheestä tai kysy tietosuojaa koskeva kysymys ottamalla yhteyttä osoitteeseen TL.Rising.Goose@gmail.com.
 - Q Weather on Rising Goosen julkaisema ilmainen, ei-kaupallinen sääsovellus.
 - Siinä ei ole tilejä, mainoksia, analytiikkaa, seurantaa, tietojen myyntiä, lahjoituksia, maksullisia ominaisuuksia eikä sovelluksen sisäisiä ostoja.
@@ -27,6 +27,8 @@
 
 - Nykyisen sijainnin käyttö on valinnaista. Jos se on käytössä, Q Weather pyytää sijaintia Google Play services -palvelun kautta.
 - Nykyinen sijainti lähetetään API-palveluntarjoajille säätietojen hakemista varten.
+- Kun käyttäjä ottaa tämän käyttöön, nykyisen sijainnin widgetit ja jatkuva sääilmoitus voivat käyttää laitteen sijaintia taustalla Q Weatherin ollessa suljettuna, jotta näytettävä sääennuste voidaan päivittää.
+- Taustalla käytettävää sijaintia käytetään vain näihin käyttäjän käyttöön ottamiin säätoimintoihin; sitä ei käytetä mainontaan, analytiikkaan tai seurantaan.
 - Voit myös lisätä sijainteja manuaalisesti myöntämättä sijaintilupaa.
 
 ## Ulkoiset palvelut

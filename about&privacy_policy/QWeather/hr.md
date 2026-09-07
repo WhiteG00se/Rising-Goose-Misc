@@ -1,4 +1,4 @@
-- Datum stupanja na snagu: 31 August 2026
+- Datum stupanja na snagu: 7 September 2026
 - Za prijavu pogreške ili pitanje o privatnosti obratite se na TL.Rising.Goose@gmail.com.
 - Q Weather je besplatna, nekomercijalna vremenska aplikacija koju objavljuje Rising Goose.
 - Nema račune, oglase, analitiku, praćenje, prodaju podataka, donacije, plaćene značajke ni kupnje unutar aplikacije.
@@ -27,6 +27,8 @@
 
 - Upotreba trenutačne lokacije nije obavezna. Ako je omogućena, Q Weather zatražit će lokaciju putem Google Play services.
 - Trenutačna se lokacija šalje API pružateljima radi dohvaćanja vremenskih podataka.
+- Kada ih korisnik omogući, widgeti za trenutačnu lokaciju i trajna vremenska obavijest mogu u pozadini pristupati lokaciji uređaja dok je Q Weather zatvoren kako bi ažurirali prikazanu prognozu.
+- Lokacija u pozadini koristi se samo za te vremenske značajke koje je omogućio korisnik; ne koristi se za oglašavanje, analitiku ni praćenje.
 - Lokacije možete dodati i ručno, bez davanja dopuštenja za lokaciju.
 
 ## Vanjske usluge

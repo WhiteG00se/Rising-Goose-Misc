@@ -1,4 +1,4 @@
-- Data intrării în vigoare: 31 August 2026
+- Data intrării în vigoare: 7 September 2026
 - Pentru a raporta o eroare sau a adresa o întrebare despre confidențialitate, contactează TL.Rising.Goose@gmail.com.
 - Q Weather este o aplicație meteo gratuită, necomercială, publicată de Rising Goose.
 - Nu are conturi, publicitate, analize, urmărire, vânzări de date, donații, funcții plătite sau achiziții în aplicație.
@@ -27,6 +27,8 @@
 
 - Utilizarea locației curente este opțională. Dacă este activată, Q Weather solicită locația prin Google Play services.
 - Locația curentă va fi trimisă furnizorilor API pentru a obține date meteo.
+- Când sunt activate de utilizator, widgeturile pentru locația curentă și notificarea meteo permanentă pot accesa în fundal locația dispozitivului cât timp Q Weather este închisă, pentru a actualiza prognoza afișată.
+- Locația în fundal este utilizată numai pentru aceste funcții meteo activate de utilizator; nu este folosită pentru publicitate, analize sau urmărire.
 - Poți adăuga locații și manual, fără să acorzi permisiunea de localizare.
 
 ## Servicii externe

@@ -1,4 +1,4 @@
-- Tanggal berlaku: 31 August 2026
+- Tanggal berlaku: 7 September 2026
 - Untuk melaporkan bug atau mengajukan pertanyaan privasi, hubungi TL.Rising.Goose@gmail.com.
 - Q Weather adalah aplikasi cuaca gratis dan nonkomersial yang diterbitkan oleh Rising Goose.
 - Aplikasi ini tidak memiliki akun, iklan, analitik, pelacakan, penjualan data, donasi, fitur berbayar, atau pembelian dalam aplikasi.
@@ -27,6 +27,8 @@
 
 - Penggunaan lokasi saat ini bersifat opsional. Jika diaktifkan, Q Weather meminta lokasi melalui Google Play services.
 - Lokasi saat ini akan dikirim ke penyedia API untuk mengambil data cuaca.
+- Jika diaktifkan oleh pengguna, widget lokasi saat ini dan notifikasi cuaca yang terus tampil dapat mengakses lokasi perangkat di latar belakang saat Q Weather ditutup, sehingga prakiraan yang ditampilkan dapat diperbarui.
+- Penggunaan lokasi di latar belakang hanya untuk fitur cuaca yang diaktifkan pengguna tersebut; lokasi tidak digunakan untuk iklan, analitik, atau pelacakan.
 - Anda juga dapat menambahkan lokasi secara manual tanpa memberikan izin lokasi.
 
 ## Layanan eksternal

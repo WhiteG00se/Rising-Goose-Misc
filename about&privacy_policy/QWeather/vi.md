@@ -1,4 +1,4 @@
-- Ngày có hiệu lực: 31 August 2026
+- Ngày có hiệu lực: 7 September 2026
 - Để báo lỗi hoặc đặt câu hỏi về quyền riêng tư, hãy liên hệ TL.Rising.Goose@gmail.com.
 - Q Weather là ứng dụng thời tiết miễn phí, phi thương mại do Rising Goose phát hành.
 - Ứng dụng không có tài khoản, quảng cáo, phân tích, theo dõi, bán dữ liệu, quyên góp, tính năng trả phí hoặc giao dịch mua trong ứng dụng.
@@ -27,6 +27,8 @@
 
 - Việc sử dụng vị trí hiện tại là tùy chọn. Nếu được bật, Q Weather yêu cầu vị trí thông qua Google Play services.
 - Vị trí hiện tại sẽ được gửi đến các nhà cung cấp API để lấy dữ liệu thời tiết.
+- Khi người dùng bật tính năng này, các tiện ích vị trí hiện tại và thông báo thời tiết liên tục có thể truy cập vị trí của thiết bị ở chế độ nền khi Q Weather đã đóng, để cập nhật dự báo đang hiển thị.
+- Vị trí ở chế độ nền chỉ được sử dụng cho các tính năng thời tiết do người dùng bật này; không được sử dụng cho quảng cáo, phân tích hoặc theo dõi.
 - Bạn cũng có thể thêm vị trí theo cách thủ công mà không cấp quyền vị trí.
 
 ## Dịch vụ bên ngoài

@@ -1,4 +1,4 @@
-- Yürürlük tarihi: 31 August 2026
+- Yürürlük tarihi: 7 September 2026
 - Bir hatayı bildirmek veya gizlilik hakkında soru sormak için TL.Rising.Goose@gmail.com adresine ulaşın.
 - Q Weather, Rising Goose tarafından yayımlanan ücretsiz ve ticari olmayan bir hava durumu uygulamasıdır.
 - Hesap, reklam, analiz, izleme, veri satışı, bağış, ücretli özellik veya uygulama içi satın alma içermez.
@@ -27,6 +27,8 @@
 
 - Mevcut konumun kullanılması isteğe bağlıdır. Etkinleştirilirse Q Weather, Google Play services aracılığıyla konum ister.
 - Hava durumu verilerini almak için mevcut konum API sağlayıcılarına gönderilir.
+- Kullanıcı etkinleştirdiğinde mevcut konum widget'ları ve sürekli hava durumu bildirimi, Q Weather kapalıyken gösterilen tahmini güncellemek için cihazın konumuna arka planda erişebilir.
+- Arka planda konum kullanımı yalnızca kullanıcının etkinleştirdiği bu hava durumu özellikleri içindir; reklam, analiz veya izleme amacıyla kullanılmaz.
 - Konum izni vermeden konumları manuel olarak da ekleyebilirsiniz.
 
 ## Harici hizmetler
