@@ -1,4 +1,4 @@
-- Date d’entrée en vigueur : 6 September 2026
+- Date d’entrée en vigueur : 2026-10-04
 - Pour signaler un bug ou poser une question sur la confidentialité, contactez TL.Rising.Goose@gmail.com.
 - Timer Hub Q est une application gratuite et non commerciale de gestion du temps, publiée par Rising Goose.
 - Elle ne comporte aucun compte, aucune publicité, aucune analyse, aucun suivi, aucune vente de données, aucun don, aucune fonctionnalité payante ni aucun achat intégré.
@@ -7,6 +7,7 @@
 ## Sources de données
 
 - Open-Meteo pour les recherches de lieux dans l’Horloge mondiale. Ses données sont sous licence CC BY 4.0.
+- Open-Meteo: Auto (lumière du jour).
 - Timer Hub Q traite ces données pour les afficher et n’est pas affiliée à Open-Meteo ni approuvée par ce service.
 
 - Open-Meteo : https://open-meteo.com/en/licence
@@ -15,10 +16,12 @@
 
 - Timer Hub Q stocke dans le stockage privé de l’application les lieux et fuseaux horaires enregistrés de l’Horloge mondiale, les alarmes et leur historique, les minuteurs et leur historique, les données du chronomètre et les sessions archivées, les réglages ainsi que les copies en cache de ce document.
 - Les noms des minuteurs, les noms des dossiers, les titres des sessions du chronomètre, les programmes, les durées, les tours et les horodatages associés restent sur votre appareil et ne sont pas envoyés à un serveur externe pour traitement.
+- Les coordonnées arrondies, le lever et le coucher du soleil, la durée du jour, le fuseau horaire et l’heure de récupération sont mis en cache localement pour les thèmes et l’utilisation hors ligne. Ce cache est exclu des exports de l’app, des sauvegardes Android et des transferts d’appareil ; Android peut le supprimer. Effacez le cache ou les données de l’app, ou désinstallez-la, pour le supprimer. Cela ne supprime pas les journaux des fournisseurs externes.
 
 ## Données de localisation
 
-- Timer Hub Q ne demande pas la localisation de votre appareil et n’y accède pas.
+- Auto (lumière du jour) envoie la position approximative du téléphone à Open-Meteo pour obtenir les heures du lever et du coucher du soleil lorsque l’application est ouverte. Si la position ou les données sont indisponibles, il suit le Système.
+- L’autorisation de localisation est facultative ; les autres thèmes fonctionnent sans elle. Timer Hub Q demande uniquement une position approximative au premier plan, jamais une position précise ou en arrière-plan. Les coordonnées sont arrondies à 0,1 degré avant leur envoi à Open-Meteo ou leur mise en cache. Si l’autorisation est déjà accordée, les données peuvent aussi être préchargées lorsque le sélecteur de thème est ouvert. Révoquez l’autorisation dans les paramètres Android pour arrêter l’accès à la position.
 - La recherche dans l’Horloge mondiale est facultative. Lors d’une recherche, le texte saisi et la langue choisie dans l’application sont envoyés à Open-Meteo pour trouver les lieux correspondants.
 - Si vous ajoutez un résultat, Timer Hub Q enregistre sur votre appareil le nom de la ville, le code pays et le fuseau horaire. Les coordonnées du résultat ne sont pas enregistrées.
 
@@ -28,9 +31,10 @@
 - Timer Hub Q envoie les termes de recherche de l’Horloge mondiale et la langue sélectionnée à Open-Meteo via HTTPS.
 - Le trafic réseau est chiffré pendant le transport au moyen de HTTPS.
 - Lorsque ce document est ouvert dans l’application, il est téléchargé via HTTPS depuis le dépôt GitHub public de Timer Hub Q.
-- Les services externes peuvent enregistrer les adresses IP, les termes de recherche, les heures des requêtes ou des détails techniques selon leurs propres politiques. Open-Meteo indique que les journaux de dépannage sont supprimés après 90 jours.
+- Les services externes peuvent enregistrer des adresses IP, des coordonnées, des termes de recherche, les heures des requêtes ou des détails techniques conformément à leurs propres politiques. Open-Meteo indique que les journaux de dépannage contenant des coordonnées sont supprimés après 90 jours.
+- Open-Meteo: https://open-meteo.com/en/terms#privacy
 
 ## Sauvegarde, conservation et suppression
 
-- Selon l’appareil et les réglages, Android, Google ou le fabricant de l’appareil peuvent inclure toutes les données stockées localement par Timer Hub Q — notamment les entrées de l’Horloge mondiale, les alarmes et leur historique, les minuteurs et leur historique, les données du chronomètre et les sessions archivées, les réglages et les copies en cache de ce document — dans les sauvegardes cloud ou les transferts d’appareil. Le développeur ne reçoit ni ne contrôle ces copies ; vous pouvez les gérer dans les réglages de sauvegarde de votre appareil ou de votre compte. Les sauvegardes peuvent subsister après la désinstallation de l’application.
+- Selon l’appareil et les paramètres, Android, Google ou le fabricant de l’appareil peut inclure les données stockées localement par Timer Hub Q dans des sauvegardes cloud ou des transferts d’appareil. Le développeur ne reçoit ni ne contrôle ces copies ; l’utilisateur peut les gérer dans les paramètres de sauvegarde de son appareil ou de son compte. Les sauvegardes peuvent rester après la désinstallation de l’application.
 - Les données locales restent jusqu’à leur remplacement, leur suppression dans l’application, leur effacement dans les réglages Android ou leur suppression lors de la désinstallation de l’application.
