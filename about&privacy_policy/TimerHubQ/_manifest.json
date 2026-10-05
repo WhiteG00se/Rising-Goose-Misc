@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "contentVersion": 2,
+  "contentVersion": 3,
   "defaultLanguage": "en",
   "documents": {
     "ar": "ar.md",
@@ -11,7 +11,8 @@
     "de": "de.md",
     "el": "el.md",
     "en": "en.md",
-    "es": "es.md",
+    "es-419": "es-419.md",
+    "es-ES": "es-ES.md",
     "fa": "fa.md",
     "fi": "fi.md",
     "fil": "fil.md",
