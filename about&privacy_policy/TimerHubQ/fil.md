@@ -1,40 +1,40 @@
 - Petsa ng bisa: 2026-10-04
 - Para mag-ulat ng bug o magtanong tungkol sa privacy, makipag-ugnayan sa TL.Rising.Goose@gmail.com.
-- Ang Timer Hub Q ay isang libre at hindi pangkomersyal na app para sa pamamahala ng oras na inilathala ng Rising Goose.
+- Ang Timer Hub ay isang libre at hindi pangkomersyal na app para sa pamamahala ng oras na inilathala ng Rising Goose.
 - Wala itong mga account, advertising, analytics, pagsubaybay, pagbebenta ng data, donasyon, bayad na feature, o in-app purchase.
-- Maaaring i-update ang dokumentong ito kapag nagbago ang gawi, paghawak ng data, o mga provider ng Timer Hub Q.
+- Maaaring i-update ang dokumentong ito kapag nagbago ang gawi, paghawak ng data, o mga provider ng Timer Hub.
 
 ## Mga pinagmumulan ng data
 
 - Open-Meteo para sa paghahanap ng lokasyon sa World Clock. Lisensyado ang data nito sa ilalim ng CC BY 4.0.
 - Open-Meteo: Awtomatiko (Liwanag ng araw).
-- Pinoproseso ng Timer Hub Q ang data na ito para sa pagpapakita at hindi ito kaakibat o ineendorso ng Open-Meteo.
+- Pinoproseso ng Timer Hub ang data na ito para sa pagpapakita at hindi ito kaakibat o ineendorso ng Open-Meteo.
 
 - Open-Meteo: https://open-meteo.com/en/licence
 
 ## Data na nakaimbak sa iyong device
 
-- Iniimbak ng Timer Hub Q sa pribadong storage ng app ang mga naka-save na lokasyon at time zone sa World Clock, mga alarm at history ng alarm, mga timer at history ng timer, data ng stopwatch at mga naka-archive na session, mga setting, at mga naka-cache na kopya ng dokumentong ito.
+- Iniimbak ng Timer Hub sa pribadong storage ng app ang mga naka-save na lokasyon at time zone sa World Clock, mga alarm at history ng alarm, mga timer at history ng timer, data ng stopwatch at mga naka-archive na session, mga setting, at mga naka-cache na kopya ng dokumentong ito.
 - Nananatili sa iyong device ang mga pangalan ng timer, pangalan ng folder, pamagat ng stopwatch session, iskedyul, tagal, lap, at kaugnay na timestamp at hindi ipinapadala sa external server para iproseso.
 - Naka-cache sa device ang ni-round na coordinate, pagsikat at paglubog ng araw, haba ng araw, time zone, at oras ng pagkuha para sa mga tema at offline na paggamit. Hindi kasama ang cache sa mga export ng app, backup ng Android o paglilipat ng device; maaaring burahin ito ng Android. Burahin ang cache o datos ng app, o i-uninstall ang app, upang alisin ito. Hindi nito binubura ang mga log ng mga panlabas na provider.
 
 ## Data ng lokasyon
 
 - Ipinapadala ng Awtomatiko (Liwanag ng araw) ang tinatayang lokasyon ng telepono sa Open-Meteo upang makuha ang oras ng pagsikat at paglubog ng araw habang bukas ang app. Kung walang lokasyon o datos, sinusunod nito ang Sistema.
-- Opsyonal ang pahintulot sa lokasyon; gumagana ang ibang tema nang wala ito. Humihiling lang ang Timer Hub Q ng tinatayang lokasyon habang nasa harapan ang app, hindi kailanman ng eksaktong lokasyon o lokasyon sa background. Niro-round ang mga coordinate sa 0.1 degree bago ipadala sa Open-Meteo o i-cache. Kung may pahintulot na, maaari ring paunang i-load ang datos habang bukas ang pagpili ng tema. Bawiin ang pahintulot sa mga setting ng Android upang ihinto ang pag-access sa lokasyon.
+- Opsyonal ang pahintulot sa lokasyon; gumagana ang ibang tema nang wala ito. Humihiling lang ang Timer Hub ng tinatayang lokasyon habang nasa harapan ang app, hindi kailanman ng eksaktong lokasyon o lokasyon sa background. Niro-round ang mga coordinate sa 0.1 degree bago ipadala sa Open-Meteo o i-cache. Kung may pahintulot na, maaari ring paunang i-load ang datos habang bukas ang pagpili ng tema. Bawiin ang pahintulot sa mga setting ng Android upang ihinto ang pag-access sa lokasyon.
 - Opsyonal ang paghahanap sa World Clock. Kapag naghanap ka, ipinapadala ang inilagay mong text at piniling wika sa app sa Open-Meteo para maghanap ng mga katugmang lokasyon.
-- Kapag nagdagdag ka ng resulta, sine-save ng Timer Hub Q sa iyong device ang pangalan ng lungsod, country code, at time zone. Hindi sine-save ang mga coordinate ng resulta.
+- Kapag nagdagdag ka ng resulta, sine-save ng Timer Hub sa iyong device ang pangalan ng lungsod, country code, at time zone. Hindi sine-save ang mga coordinate ng resulta.
 
 ## Mga external na serbisyo
 
-- Walang backend na pinapatakbo ang developer ng Timer Hub Q at hindi nito natatanggap ang mga request ng Open-Meteo.
-- Ipinapadala ng Timer Hub Q ang mga search term ng World Clock at piniling wika sa Open-Meteo sa pamamagitan ng HTTPS.
+- Walang backend na pinapatakbo ang developer ng Timer Hub at hindi nito natatanggap ang mga request ng Open-Meteo.
+- Ipinapadala ng Timer Hub ang mga search term ng World Clock at piniling wika sa Open-Meteo sa pamamagitan ng HTTPS.
 - Naka-encrypt ang network traffic habang ipinapadala gamit ang HTTPS.
-- Kapag binuksan ang dokumentong ito sa app, dina-download ito sa pamamagitan ng HTTPS mula sa pampublikong GitHub repository ng Timer Hub Q.
+- Kapag binuksan ang dokumentong ito sa app, dina-download ito sa pamamagitan ng HTTPS mula sa pampublikong GitHub repository ng Timer Hub.
 - Maaaring mag-log ang external na serbisyo ng mga IP address, coordinate, search term, oras ng request, o technical detail ayon sa sarili nilang policy. Sinasabi ng Open-Meteo na ang mga troubleshooting log na may coordinate ay binubura pagkalipas ng 90 araw.
 - Open-Meteo: https://open-meteo.com/en/terms#privacy
 
 ## Backup, pagpapanatili at pagtanggal
 
-- Depende sa device at setting, maaaring isama ng Android, Google, o manufacturer ng device ang lokal na data ng Timer Hub Q sa cloud backup o paglipat ng device. Hindi natatanggap o kinokontrol ng developer ang mga kopyang ito; maaaring pamahalaan ng user ang mga ito sa backup setting ng device o account. Maaaring manatili ang mga backup pagkatapos i-uninstall ang app.
+- Depende sa device at setting, maaaring isama ng Android, Google, o manufacturer ng device ang lokal na data ng Timer Hub sa cloud backup o paglipat ng device. Hindi natatanggap o kinokontrol ng developer ang mga kopyang ito; maaaring pamahalaan ng user ang mga ito sa backup setting ng device o account. Maaaring manatili ang mga backup pagkatapos i-uninstall ang app.
 - Nananatili ang lokal na data hanggang sa mapalitan, alisin sa app, burahin sa Android settings, o matanggal kapag in-uninstall ang app.
